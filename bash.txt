@@ -1,0 +1,21 @@
+mkdir jnf-bin-only
+cd jnf-bin-only
+
+git init
+
+git remote add origin https://github.com/mcmattyobriore/JNF.git
+
+git config core.sparseCheckout true
+
+echo "html5/bin/*" >> .git/info/sparse-checkout
+
+git pull origin main
+
+mv html5/bin/* ./
+
+rm -rf html5
+
+rm -rf .git
+git init
+git add .
+git commit -m "Imported html5/bin as root"

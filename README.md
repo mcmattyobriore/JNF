@@ -1,2 +1,2 @@
 # V SLICR5
-or mobile polymod v sliciin!
+for mobile polymod v sliciin!
